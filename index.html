@@ -163,7 +163,39 @@
       z-index:1;
     }
     
-  </style>
+  
+    /* Formas de pago y contacto comercial (debajo de Nota) */
+    .pay-card{
+      margin-top: 12px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .pay-head{
+      background: var(--blue2);
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: .4px;
+      padding: 10px 12px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .pay-body{
+      padding: 12px;
+      color: var(--text);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .pay-body a{
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .pay-body a:hover{ text-decoration: underline; }
+    .pay-spacer{ height: 10px; }
+
+</style>
 
   <!-- jsPDF + AutoTable (CDN). Si tu ambiente no tiene internet, dime y te lo dejo sin dependencias externas. -->
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
@@ -318,6 +350,19 @@
         <div class="footer-note">
           <strong>Nota:</strong> Esta es una cotización informativa. Valores en CLP. La disponibilidad/tiempos pueden variar según validación de muestra.
         </div>
+
+
+        <div class="pay-card" aria-label="Formas de pago y contacto comercial">
+          <div class="pay-head">FORMAS DE PAGO Y CONTACTO COMERCIAL</div>
+          <div class="pay-body">
+            <div><strong>Formas de Pago:</strong> Transferencia bancaria · Tarjetas crédito/débito · Cuotas Mercado Pago o GetNet (aplican cargos adicionales)</div>
+            <div class="pay-spacer"></div>
+            <div><strong>Contacto:</strong> Beatriz Fonseca — <a href="mailto:beatriz.fonseca@nomadgenetics.com">beatriz.fonseca@nomadgenetics.com</a> — <a href="tel:+56931863263">+56 9 3186 3263</a></div>
+            <div><strong>Pacientes Chile:</strong> <a href="mailto:Patient.cl@nomadgenetics.com">Patient.cl@nomadgenetics.com</a> — <a href="tel:+56992075448">+56 9 9207 5448</a></div>
+          </div>
+        </div>
+
+
 
         <div class="divider"></div>
 
